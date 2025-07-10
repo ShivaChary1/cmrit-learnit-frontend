@@ -35,10 +35,10 @@
 
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ScrollView, StyleSheet } from 'react-native';
-import Greeting from './Greeting';
-import FeatureGrid from './FeatureGrid';
-import UpcomingTests from './UpcomingTests';
-import RecentMaterials from './RecentMaterials';
+import Greeting from '../components/Home/Greeting';
+import FeatureGrid from '../components/Home/FeatureGrid';
+import UpcomingTests from '../components/Home/UpcomingTests';
+import RecentMaterials from '../components/Home/RecentMaterials';
 
 export default function HomeScreen() {
   return (

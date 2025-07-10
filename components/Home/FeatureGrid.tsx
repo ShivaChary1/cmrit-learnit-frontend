@@ -63,12 +63,12 @@
 // components/FeatureGrid.tsx
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Feather, FontAwesome5, MaterialIcons } from '@expo/vector-icons';
+import { Feather, MaterialIcons, Foundation } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 
 const features = [
   { icon: <Feather name="book" size={28} color="#555" />, title: 'Study Materials', desc: 'Access all your course materials', href: '/(tabs)/study-material' },
-  { icon: <FontAwesome5 name="clipboard-list" size={28} color="#555" />, title: 'Tests', desc: 'Take tests and view results', href: '/(tabs)/exams' },
+  { icon: <Foundation name="clipboard-pencil" size={24} color="#555" />, title: 'Tests', desc: 'Take tests and view results', href: '/(tabs)/exams' },
   { icon: <Feather name="calendar" size={28} color="#555" />, title: 'Schedule', desc: 'View your class schedule', href: '#' },
   { icon: <MaterialIcons name="trending-up" size={28} color="#555" />, title: 'Progress', desc: 'Track your performance', href: '#' },
 ];

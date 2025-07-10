@@ -1,11 +1,10 @@
-import { Tabs } from 'expo-router';
+import { Tabs, Stack } from 'expo-router';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Feather from '@expo/vector-icons/Feather';
 import Header from '@/components/common/Header';
 import Foundation from '@expo/vector-icons/Foundation';
 const TabsLayout = () => {
-    return (
-        <Tabs
+    return (<Tabs
             initialRouteName="index"
             backBehavior="history"
             screenOptions={{
@@ -28,7 +27,7 @@ const TabsLayout = () => {
                     shadowOpacity: 0, // Remove shadow on iOS
                 },
             }}
-        >
+            >
             <Tabs.Screen
                 name="index"
                 options={{
@@ -45,8 +44,8 @@ const TabsLayout = () => {
                     title: 'Exams',
                     animation: 'fade',
                     tabBarIcon: ({ color }) => (
-                        <Foundation name="clipboard-pencil" size={24} color={color} />),
-                }}
+                        <Foundation name="clipboard-pencil" size={25} color={color} />),
+                    }}
             />
             <Tabs.Screen
                 name="study-material"
@@ -67,7 +66,7 @@ const TabsLayout = () => {
                         <AntDesign name="user" size={24} color={color} style={{ marginBottom: -5 }} />
                     ),
                 }}
-            />
+                />
         </Tabs>
     );
 };

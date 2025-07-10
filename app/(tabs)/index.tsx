@@ -1,5 +1,5 @@
 //import liraries
-import HomeScreen from '@/components/Home/HomeScreen';
+import HomeScreen from '@/screens/HomeScreen';
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 

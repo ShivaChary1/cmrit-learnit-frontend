@@ -43,10 +43,21 @@ const styles = StyleSheet.create({
     color: '#007bff',
   },
   card: {
-    backgroundColor: '#f2f2f2',
+    backgroundColor: '#fff',
     padding: 12,
     borderRadius: 10,
     marginBottom: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+
+    // Shadow for Android
+    elevation: 2,
+
+    // Subtle border
+    borderWidth: 1,
+    borderColor: '#f0f0f0',
   },
   title: {
     fontWeight: 'bold',

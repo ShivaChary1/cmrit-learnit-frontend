@@ -1,4 +1,3 @@
-// components/UpcomingTests.tsx
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
@@ -60,10 +59,23 @@ const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#f2f2f2',
+    backgroundColor: '#fff',
     padding: 12,
     borderRadius: 10,
     marginBottom: 10,
+
+    // Shadow for iOS
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+
+    // Shadow for Android
+    elevation: 2,
+
+    // Subtle border
+    borderWidth: 1,
+    borderColor: '#f0f0f0',
   },
   testTitle: {
     fontWeight: 'bold',
@@ -74,7 +86,7 @@ const styles = StyleSheet.create({
     color: '#666',
   },
   tag: {
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#eee',
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 8,
